@@ -1,5 +1,34 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  display: flex;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+:root {
+  --color-primario: rgb(157, 241, 247);
+  --color-secundario: rgb(247, 250, 250);
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3;
+  background-color: var(--color-primario);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  background-color: var(--color-secundario);
+}
