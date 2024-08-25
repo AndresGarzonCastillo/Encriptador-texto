@@ -1,0 +1,10 @@
+crear un nuevo repositorio:
+git config --global user.name "mi nombre"
+git config --global user.email "mi email"
+voy a la ruta de mi proyecto en mi pc
+git init
+git remote add origin https://github.com/AndresGarzonCastillo/Encriptador-texto
+git branch -M main
+git push -u origin main
+
+actualizar versiones:
