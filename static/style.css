@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,8 +19,8 @@ main {
 :root {
   --color-primario: rgb(157, 241, 247);
   --color-secundario: rgb(247, 250, 250);
-  --color-boton: rgb(0, 123, 255);
-  --color-boton-hover: rgb(0, 105, 217);
+  --color-boton: rgb(53, 128, 209);
+  --color-boton-hover: rgb(27, 55, 85);
 }
 
 .side {
@@ -48,10 +49,18 @@ main {
   padding: 20px;
   box-sizing: border-box;
   margin: 30px 70px;
+  text-align: center;
+}
+
+.card-body {
+  flex-grow: 1;
+  width: 100%;
+  text-align: justify;
+  overflow-wrap: break-word;
 }
 
 .card img {
-  width: 100%;
+  width: 50%;
 }
 
 .textarea-container {
@@ -71,14 +80,29 @@ main {
   border-radius: 15px;
 }
 
-.botones-accion {
+.leyenda {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.leyenda p {
+  margin: 0;
+}
+
+.seccion-botones {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-top: 20px;
 }
 
-.btn {
+.btn-encriptar,
+.btn-desencriptar,
+#btn-copiar {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -89,6 +113,13 @@ main {
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+.btn-desencriptar:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-boton);
+}
+
+.btn-desencriptar:not(:disabled):hover,
+.btn-encriptar:hover,
+#btn-copiar:hover {
   background-color: var(--color-boton-hover);
 }

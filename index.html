@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/static/style.css" />
     <title>Encriptador de Texto</title>
   </head>
@@ -21,14 +25,17 @@
             placeholder="Ingrese el texto aquí"
           ></textarea>
         </div>
-        <div>
-          <p>Solo letras minúsculas y sin acentos</p>
-        </div>
-        <div class="botones-accion">
-          <button class="btn encriptar" id="btn-encriptar">Encriptar</button>
-          <button class="btn desencriptar" id="btn-desencriptar" disabled>
+        <div class="seccion-botones">
+          <div class="leyenda">
+            <i class="fas fa-info-circle"></i>
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones-accion">
+          <button class="btn-encriptar" id="btn-encriptar">Encriptar</button>
+          <button class="btn-desencriptar" id="btn-desencriptar" disabled>
             Desencriptar
           </button>
+        </div>
         </div>
         <div class="card" id="card">
           <div id="card-content">
