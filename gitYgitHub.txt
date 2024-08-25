@@ -8,3 +8,11 @@ git branch -M main
 git push -u origin main
 
 actualizar versiones:
+gid add .
+gid commit -m "Agregar txt git"
+git push -u origin main
+
+ver estados y acciones en el git:
+git status
+git log
+
